@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.musicalstructureappudacity.MainActivity"
+    >
+
+    <RelativeLayout
+        android:id="@+id/button_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        >
+        <Button
+            android:id="@+id/now_playing"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Playing"
+            android:background="@drawable/gradient_button_without_edges"
+            android:textColor="@color/primaryTextColor"
+            android:layout_margin="20dp"
+            />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_alignParentTop="true"
+        android:layout_above="@id/button_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:numColumns="2"
+        android:verticalSpacing="8dp"
+        android:horizontalSpacing="10dp"
+        android:stretchMode="columnWidth"
+        android:gravity="center"
+        >
+    </ListView>
+
+
+</RelativeLayout>
